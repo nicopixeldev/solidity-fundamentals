@@ -27,8 +27,8 @@ contract SimpleStorage {
 
     // static array of 3 items max
     // Person[] public listOfPeople;
-
-    function store(uint256 _favoriteNumber) public {
+    // The `virtual` keyword allows a function to be overridden
+    function store(uint256 _favoriteNumber) public virtual {
         myFavoriteNumber = _favoriteNumber;
     }
 
@@ -45,4 +45,20 @@ contract SimpleStorage {
         listOfPeople.push( Person(_favoriteNumber, _name) );
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
+}
+
+contract SimpleStorage2 {
+
+}
+
+contract SimpleStorage3 {
+
+}
+
+contract SimpleStorage4 {
+
+}
+
+contract SimpleStorage5 {
+
 }
